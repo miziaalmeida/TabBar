@@ -13,7 +13,7 @@ class ContatoViewController: UIViewController {
     
     @IBAction func acessoTelefone(_ sender: UIButton){
         let phoneNumber = "0123456789"
-        if let phoneURL = NSURL(string: ("tel://" + phoneNumber)) {
+        if let phoneURL = URL(string: ("tel://" + phoneNumber)) {
 
             let alert = UIAlertController(title: ("Ligar para " + phoneNumber + "?"), message: nil, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ligar para", style: .default, handler: { (action) in
