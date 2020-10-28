@@ -12,4 +12,4 @@ Aula sobre TabBar
 - Avalie o App
 
 ### Preview:
-
+![previa](https://media.giphy.com/media/GxnDbvgW4cs7dZOxMo/giphy.gif)
