@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19DD3E1A254991A1000D0896 /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD3E19254991A1000D0896 /* CarDetailViewController.swift */; };
+		19DD3E1E254991AB000D0896 /* CarDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DD3E1D254991AB000D0896 /* CarDetail.storyboard */; };
 		19FDC8752548B254000958C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDC8742548B254000958C7 /* AppDelegate.swift */; };
 		19FDC8772548B254000958C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDC8762548B254000958C7 /* SceneDelegate.swift */; };
 		19FDC8792548B254000958C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FDC8782548B254000958C7 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19DD3E19254991A1000D0896 /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
+		19DD3E1D254991AB000D0896 /* CarDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarDetail.storyboard; sourceTree = "<group>"; };
 		19FDC8712548B254000958C7 /* tabBar-Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tabBar-Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FDC8742548B254000958C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19FDC8762548B254000958C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19DD3E1525498F57000D0896 /* Contato */ = {
+			isa = PBXGroup;
+			children = (
+				19FDC88C2548B851000958C7 /* ContatoViewController.swift */,
+			);
+			path = Contato;
+			sourceTree = "<group>";
+		};
+		19DD3E1625498F61000D0896 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				19FDC89B2548E7FE000958C7 /* GoogleViewController.swift */,
+			);
+			name = Google;
+			sourceTree = "<group>";
+		};
+		19DD3E1825499181000D0896 /* CarDetail */ = {
+			isa = PBXGroup;
+			children = (
+				19DD3E19254991A1000D0896 /* CarDetailViewController.swift */,
+				19DD3E1D254991AB000D0896 /* CarDetail.storyboard */,
+			);
+			path = CarDetail;
+			sourceTree = "<group>";
+		};
 		19FDC8682548B254000958C7 = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +99,10 @@
 				19FDC8762548B254000958C7 /* SceneDelegate.swift */,
 				19FDC8782548B254000958C7 /* ViewController.swift */,
 				19FDC87A2548B254000958C7 /* Main.storyboard */,
+				19DD3E1825499181000D0896 /* CarDetail */,
 				19FDC8992548D094000958C7 /* Car */,
-				19FDC88C2548B851000958C7 /* ContatoViewController.swift */,
-				19FDC89B2548E7FE000958C7 /* GoogleViewController.swift */,
+				19DD3E1525498F57000D0896 /* Contato */,
+				19DD3E1625498F61000D0896 /* Google */,
 				19FDC87D2548B25C000958C7 /* Assets.xcassets */,
 				19FDC87F2548B25C000958C7 /* LaunchScreen.storyboard */,
 				19FDC8822548B25C000958C7 /* Info.plist */,
@@ -147,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DD3E1E254991AB000D0896 /* CarDetail.storyboard in Resources */,
 				19FDC8812548B25C000958C7 /* LaunchScreen.storyboard in Resources */,
 				19FDC87E2548B25C000958C7 /* Assets.xcassets in Resources */,
 				19FDC87C2548B254000958C7 /* Main.storyboard in Resources */,
@@ -165,6 +196,7 @@
 				19FDC8792548B254000958C7 /* ViewController.swift in Sources */,
 				19FDC8942548BA66000958C7 /* CarTableViewCell.swift in Sources */,
 				19FDC8752548B254000958C7 /* AppDelegate.swift in Sources */,
+				19DD3E1A254991A1000D0896 /* CarDetailViewController.swift in Sources */,
 				19FDC8772548B254000958C7 /* SceneDelegate.swift in Sources */,
 				19FDC8972548BB89000958C7 /* Car.swift in Sources */,
 				19FDC88A2548B844000958C7 /* CarViewController.swift in Sources */,

@@ -15,5 +15,6 @@ class GoogleViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Google Aba"
     }
 }

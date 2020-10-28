@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D1D-w5-IW8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Detail View Controller-->
+        <scene sceneID="5xB-1m-Jv9">
+            <objects>
+                <viewController id="D1D-w5-IW8" customClass="CarDetailViewController" customModule="tabBar_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c8q-yu-j9d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modelo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRf-nJ-TON">
+                                <rect key="frame" x="87" y="429" width="240" height="21.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21.5" id="zzj-lI-RAf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ano" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLg-Ct-C75">
+                                <rect key="frame" x="87" y="470.5" width="240" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="Vk6-Sb-xRt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T1M-eW-XOy">
+                                <rect key="frame" x="123" y="276" width="168" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="os4-xg-JVB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SsZ-f0-CMy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cLg-Ct-C75" firstAttribute="top" secondItem="FRf-nJ-TON" secondAttribute="bottom" constant="20" id="6o9-EU-wuq"/>
+                            <constraint firstItem="FRf-nJ-TON" firstAttribute="leading" secondItem="SsZ-f0-CMy" secondAttribute="leading" constant="87" id="8mm-xK-hD7"/>
+                            <constraint firstItem="SsZ-f0-CMy" firstAttribute="trailing" secondItem="T1M-eW-XOy" secondAttribute="trailing" constant="123" id="KPL-MI-urK"/>
+                            <constraint firstItem="SsZ-f0-CMy" firstAttribute="bottom" secondItem="cLg-Ct-C75" secondAttribute="bottom" constant="371" id="No2-lQ-db4"/>
+                            <constraint firstItem="T1M-eW-XOy" firstAttribute="leading" secondItem="SsZ-f0-CMy" secondAttribute="leading" constant="123" id="QRh-1X-WJy"/>
+                            <constraint firstItem="T1M-eW-XOy" firstAttribute="top" secondItem="SsZ-f0-CMy" secondAttribute="top" constant="232" id="Sig-9k-pCk"/>
+                            <constraint firstItem="SsZ-f0-CMy" firstAttribute="trailing" secondItem="cLg-Ct-C75" secondAttribute="trailing" constant="87" id="bXZ-dB-yVt"/>
+                            <constraint firstItem="FRf-nJ-TON" firstAttribute="top" secondItem="T1M-eW-XOy" secondAttribute="bottom" constant="30" id="hxW-ib-1CW"/>
+                            <constraint firstItem="cLg-Ct-C75" firstAttribute="leading" secondItem="SsZ-f0-CMy" secondAttribute="leading" constant="87" id="tQy-NT-bZ2"/>
+                            <constraint firstItem="SsZ-f0-CMy" firstAttribute="trailing" secondItem="FRf-nJ-TON" secondAttribute="trailing" constant="87" id="voH-rb-1ey"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageCar" destination="T1M-eW-XOy" id="wct-HF-nEH"/>
+                        <outlet property="labelAno" destination="cLg-Ct-C75" id="0wH-Dd-okb"/>
+                        <outlet property="labelModelo" destination="FRf-nJ-TON" id="C3D-Ey-oF1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USP-4n-r67" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="34.821428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

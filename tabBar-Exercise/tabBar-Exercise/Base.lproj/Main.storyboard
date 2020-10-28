@@ -31,13 +31,13 @@
         <scene sceneID="7pn-K1-6Y8">
             <objects>
                 <navigationController id="RQy-Qg-P46" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="TJe-XU-6dc"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="car" catalog="system" id="TJe-XU-6dc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ldp-5A-5Kq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="LX4-5T-QNu" kind="relationship" relationship="rootViewController" id="xfB-FE-AHc"/>
+                        <segue destination="LX4-5T-QNu" kind="relationship" relationship="rootViewController" id="3rv-xN-eBi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtx-iO-Q2A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -121,13 +121,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOm-RI-vFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-771.01449275362324" y="1631.9196428571429"/>
+            <point key="canvasLocation" x="-771" y="1642"/>
         </scene>
         <!--Item-->
         <scene sceneID="iCX-ek-1gc">
             <objects>
                 <navigationController id="ym4-rP-QN4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZbU-q2-5nh"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="safari.fill" catalog="system" id="ZbU-q2-5nh"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dj2-G0-vXf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -144,7 +144,7 @@
         <scene sceneID="g5e-E4-f5o">
             <objects>
                 <navigationController id="efj-8Q-oMe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="WkX-Oy-X8S"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="WkX-Oy-X8S"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IsK-CE-SD2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znI-tp-1LH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71.014492753623188" y="1631.9196428571429"/>
+            <point key="canvasLocation" x="-71" y="1642"/>
         </scene>
         <!--Open to Google-->
         <scene sceneID="grq-w0-bfF">
@@ -230,7 +230,7 @@
                                     <constraint firstAttribute="height" constant="30" id="NZ0-U0-245"/>
                                 </constraints>
                                 <state key="normal" title="Google">
-                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.093479402363300323" green="0.16994655132293701" blue="0.94936448335647583" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="googleButton:" destination="CdC-Ns-AFu" eventType="touchUpInside" id="NcW-Fi-hzD"/>
@@ -238,7 +238,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="r8n-ef-i6B"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.77351776539999995" green="0.83449272259999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="r8n-ef-i6B" firstAttribute="bottom" secondItem="V25-DQ-MDC" secondAttribute="bottom" constant="372" id="3dN-mP-MsV"/>
                             <constraint firstItem="V25-DQ-MDC" firstAttribute="top" secondItem="r8n-ef-i6B" secondAttribute="top" constant="323" id="63P-8T-zch"/>
@@ -250,10 +250,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Nu-Ai-Cw3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628.98550724637687" y="1631.9196428571429"/>
+            <point key="canvasLocation" x="629" y="1642"/>
         </scene>
     </scenes>
     <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="safari.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

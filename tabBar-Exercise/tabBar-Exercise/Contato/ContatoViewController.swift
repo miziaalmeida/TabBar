@@ -36,5 +36,6 @@ class ContatoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Contato"
     }
 }

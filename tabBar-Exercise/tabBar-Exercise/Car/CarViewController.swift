@@ -14,6 +14,7 @@ class CarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Lista de Carros"
         loadUnos()
 
         carTableView.delegate = self
@@ -42,7 +43,12 @@ class CarViewController: UIViewController {
 
 
 extension CarViewController: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let carDetail = UIStoryboard(name: "CarDetail", bundle: nil).instantiateInitialViewController() as? CarDetailViewController{
+                        navigationController?.pushViewController(carDetail, animated: true)
+            carDetail.car = arrayUnos[indexPath.row]
+        }
+    }
 }
 
 extension CarViewController: UITableViewDataSource{
